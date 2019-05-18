@@ -1,0 +1,263 @@
+/*--James Dietz, borrowed HW #11, Web Page, Data Analytics, Cohort #3--*/
+
+/*BODY*/
+body{
+    background-color: lightgray;
+}
+
+/*NAVBAR*/
+.navbar-default{
+    background-color: white;
+    font-weight: bold;
+    color: rgb(80,80,180);
+    padding-left: 50px;
+    padding-right: 50px;
+    
+}
+.navbar-default .navbar-nav .active a{
+    font-weight: bold;
+    background-color: rgb(128,128,128);
+    color: white;
+}
+
+@media(max-width: 500px){
+    .navbar-default{
+        background-color: white;
+        color: darkslategrey;
+    }
+    .navbar-default .navbar-nav .active a{
+        background-color:darkslategrey;
+        color: white;
+    }
+}
+
+/* HEADERS, IMAGES, TEXTS PAGES*/
+h1{
+    color: #484848;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2{
+    color: #484848;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+    
+}
+
+h4{
+    color: #808080;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+    
+}
+
+#main-img{
+    float: left;
+    height: 400px;
+    width: 300px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+#viz-img{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 400px;
+    width: 600px;
+    max-width: 100%;
+    margin-left: 50px;
+}
+
+p{
+  font-size: 16px;
+  padding: 7px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;  
+}
+
+.tab { margin-left: 40px; }
+
+.main-box{
+    padding: 20px;
+    background: white;
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    align-content: center;
+    position: relative;
+}
+
+.side-box{
+    background: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    align-content: center;
+    position: relative;
+}
+
+.sidebar{
+    position: relative;
+    height: 340px;
+    width: 300px;
+    align-content: center;
+}
+
+
+#side-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 140px;
+    width: 140px;
+    border: 3px solid  darkslategrey;
+}
+
+#side-img1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 140px;
+    width: 140px;
+    border: 3px solid white;
+}
+
+#side-img1:hover{
+    border: 3px solid darkslategrey;
+}
+
+#side-img2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 140px;
+    width: 140px;
+    border: 3px solid white;
+}
+
+#side-img2:hover{
+    border: 3px solid darkslategrey;
+}
+
+#side-img3{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 140px;
+    width: 140px;
+    border: 3px solid white;
+}
+
+#side-img3:hover{
+    border: 3px solid darkslategrey;
+}
+
+#side-img4{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 140px;
+    width: 140px;
+    border: 3px solid white;
+}
+
+#side-img4:hover{
+    border: 3px solid darkslategrey;
+}
+
+@media(max-width: 995px){
+    .sidebar{
+    position: relative;
+    height: 145px;
+    width: auto;
+    }
+    #side-img1{
+        float: left;
+        position: relative;
+        width: 25%;
+        border: 3px solid white;
+    }
+    #side-img1:hover{
+        border: 3px solid darkslategrey;
+    }
+    #side-img2{
+        float: left;
+        position: relative;
+        width: 25%;
+        border: 3px solid white;
+    }
+    #side-img2:hover{
+        border: 3px solid darkslategrey;
+    }
+    #side-img3{
+        float: left;
+        position: relative;
+        width: 25%;
+        border: 3px solid white;
+    }
+    #side-img3:hover{
+        border: 3px solid darkslategrey;
+    }
+    #side-img4{
+        float: left;
+        position: relative;
+        width: 25%;
+        border: 3px solid white;
+    }
+    #side-img4:hover{
+        border: 3px solid darkslategrey;
+    }
+}
+/*FOOTER*/
+.bottom-footer {
+    background-color: white;
+    margin-top: 20px;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    line-height: 25px;
+}
+#footer-txt{
+    margin: 0;
+    color: gray;
+}
+
+/*COMPARISON PAGE*/
+.center{
+    display: block;
+    height: 250px;
+    width: 400px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*TABLE*/
+table{
+    border-collapse: collapse;
+    border: 3px;
+}
+
+th, td{
+    border: 0;
+}
+
+@media(max-width: 760px) {
+    table{
+        overflow-x: scroll;
+        display: block;
+    }
+}

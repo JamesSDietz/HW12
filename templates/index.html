@@ -1,0 +1,98 @@
+
+<!----James Dietz, HW #12, Web Scraping, Data Analytics, Cohort #3-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mission to Mars</title>
+  <link rel="style.css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    
+
+<div class="container text-center">  
+  <div class="jumbotron text-center ml-5 mt-5 mr-5 mb-5"> 
+    <h1 class="display-4">Mission to Mars</h1>
+    
+    <hr class="my-4">
+    
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a>
+    </p>
+  </div>
+</div>
+  
+
+<br>
+<br>
+
+<div class="container text-center">	
+  
+  <div class="row text-center ml-5 mt-5 mr-5 mb-5">
+    
+    <div class="col-lg-6 mb-6  border border-secondary" style="background-color: gainsboro">
+      <h2 class="text-primary pt-4">Featured Image</h2>
+      <img src="{{mars.featured_image_url}}" alt="featured image" style="width: 80%;">
+      <hr>
+      <h2 class="text-primary pt-4">Latest News from Mars</h2>
+        <h3>{{mars.news_title}}/<h3>
+        <p>{{mars.news_story}}</p>
+    </div>
+
+    <hr>
+    
+    <div class="col-lg-6 mb-6 border border-secondary" style="background-color: gainsboro">
+       
+      <div>
+        <h2 class="text-primary pt-4">Current Mars Weather</h2>
+        <hr>
+        <p>{{mars.mars_weather}}</p>
+      </div>
+        
+      <div>
+        <hr>
+        <h2 class="text-primary pt-4">Mars Facts</h2>
+        
+        <table class="table table-sm table-striped table-bordered">
+          {{mars.mars_facts|safe}}
+        </table>
+      
+      </div>
+
+    </div>        
+  </div>
+  <div class="container-fluid" style="background-color: gainsboro">
+    <h2>Photos of Mars' Hemispheres</h2>
+    <br>
+    <hr>
+</div>
+  
+
+  <figure class="figure">
+    <img src={{mars.cerberus_url}} class="figure-img img-fluid rounded" alt="Cerberus Hemisphere of Mars">
+    <figcaption class="text-primary pt-4">Cerberus Hemisphere</figcaption>
+  </figure>
+
+  <figure class="figure">
+    <img src={{mars.schiaparelli_url}} class="figure-img img-fluid rounded" alt="Schiaparelli Hemisphere of Mars">
+    <figcaption class="text-primary pt-4">Schiaparelli Hemisphere</figcaption>
+  </figure>
+
+  <figure class="figure">
+    <img src={{mars.syrtis_url}} class="figure-img img-fluid rounded" alt="Syrtis Hemisphere of Mars">
+    <figcaption class="text-primary pt-4">Syrtis Major Hemisphere</figcaption>
+  </figure>
+  
+  <figure class="figure">
+    <img src={{mars.valles_url}} class="figure-img img-fluid rounded" alt="Valles Hemisphere of Mars">
+    <figcaption class="text-primary pt-4">Valles Marineris Hemisphere</figcaption>
+  </figure>
+  
+</div>
+</html>
